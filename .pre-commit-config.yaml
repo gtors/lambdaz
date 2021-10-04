@@ -1,0 +1,29 @@
+repos:
+  - repo: local
+    hooks:
+
+    - id: black
+      name: black
+      language: system
+      entry: pipenv run black -l 79
+      types: [python]
+
+    - id: flake8
+      name: flake8
+      language: system
+      entry: pipenv run flake8 
+      types: [python]
+
+    - id: isort
+      name: isort
+      language: system
+      entry: pipenv run isort 
+      types: [python]
+
+    - id: gitlint
+      name: gitlint
+      language: python
+      entry: pipenv run gitlint
+      args: [--staged, --msg-filename]
+      stages: [commit-msg]
+
