@@ -72,3 +72,9 @@ Kwargs:
 >>> hello(first_name="Foo", last_name="Bar")
 Hello Foo Bar!
 ```
+
+## Similar projects
+- https://github.com/Suor/whatever
+- https://github.com/dry-python/lambdas
+- https://gist.github.com/internetimagery/05082fac28bc17860ec23fa0d7172df7
+- https://github.com/sspipe/sspipe
